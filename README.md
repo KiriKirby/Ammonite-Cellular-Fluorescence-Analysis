@@ -2,16 +2,18 @@
 
 This repository was started at the request of my supervisor to build a Fiji macro for cell-level fluorescence intensity analysis.
 
-The intended setup is simple:
+The practical goal is straightforward:
 - one image is used to locate cells;
 - one image is used to measure fluorescence intensity;
 - the fluorescence background is not pure black, so it must be estimated and normalized back to zero;
 - the cell range to be measured should be selected from cells in good condition, with low density and relatively few internal impurities.
 
-When I was thinking about how to design this script, I accidentally fell asleep and had a dream.
+That said, the codename of this project did not arrive in an ordinary way.
 
-In the dream, I sank into the deep sea and became a prehistoric nautilus. Then the god of evolution suddenly appeared in front of me. He looked at me, shook his head, and said that people with modern expectations are never satisfied. In earlier times, we did not even have a nuclear envelope, DNA replication had only a single origin, but life was convenient then. mRNA was polycistronic, there was no need for splicing, capping, or tailing, and having ribosomes and flagella was already enough. Pyruvate could simply be consumed in the cytosol, and in some organisms even the thylakoids were exposed directly in the cytoplasmic matrix. It was convenient then: transcription and translation could happen at the same time, and one mRNA could bind multiple ribosomes. Yet now these newer beings do not even want restriction enzymes, and instead ask for epigenetics and differentiation. Truly incomprehensible.
+While thinking about how to design the script, I accidentally fell asleep and had a dream. In the dream, I sank into the deep sea and became a prehistoric nautilus. Then the god of evolution appeared before me, took one look at me, and began speaking in the tone of a senior elder complaining about how spoiled the younger generation has become.
 
-The moment I heard this, I understood everything at once and gave up on evolution. At the same time, the god of evolution also told me how this Fiji script should be built, so I decided that the codename of this project should be `Nautilus`, in gratitude for that legendary dream experience.
+He said: in our time, we did not even have a nuclear envelope, and we were perfectly happy. DNA replication had one origin. One. That was enough for everybody. mRNA was polycistronic, nobody asked for splicing, nobody asked for capping, nobody asked for poly(A) tails, and nobody complained. We had ribosomes, we had flagella, and we appreciated them. Pyruvate was eaten right there in the cytosol. Some people even had thylakoids exposed directly in the cytoplasmic matrix and still did not make a fuss about it. Back then, transcription and translation happened together, one mRNA could carry multiple ribosomes, and everybody called that efficiency. But now, apparently, people are no longer satisfied with restriction enzymes. No, now they want epigenetics, differentiation, and all kinds of additional requirements. Truly, the younger lineages have forgotten how to endure hardship.
+
+Upon hearing this, I was enlightened immediately. I abandoned evolution on the spot. The god of evolution, perhaps pleased that at least one organism still respected the old ways, then told me exactly how this Fiji script should be constructed. For that reason, I decided that the codename of this project should be `Nautilus`, in honor of that profound and deeply educational dream.
 
 All of the above is made up.
