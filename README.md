@@ -1,8 +1,8 @@
 # Ammonite Cellular Fluorescence Analysis
 
-![Ammonite fossil](https://commons.wikimedia.org/wiki/Special:FilePath/Ammonite%20fossil.jpg)
+![Header image](https://zh.minecraft.wiki/images/Nautilus_JE1_BE2.gif?d2e8b)
 
-Source image: ["Ammonite fossil.jpg" by Tiia Monto on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ammonite_fossil.jpg), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Source image: [Minecraft Wiki, "Nautilus_JE1_BE2.gif"](https://zh.minecraft.wiki/images/Nautilus_JE1_BE2.gif?d2e8b).
 
 This repository was started at the request of my supervisor to build a Fiji macro for cell-level fluorescence intensity analysis.
 
