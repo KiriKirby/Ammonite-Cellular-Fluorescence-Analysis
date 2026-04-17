@@ -3,9 +3,11 @@
 These instructions apply to this repository.
 
 ## Language Requirement
-- Use English for all new narrative content in this repository.
-- This project supports English only. Do not add Chinese, Japanese, or other localized UI/documentation blocks unless explicitly requested.
-- Quoted strings and code examples may remain as-is when required by external compatibility, but new user-facing text should be English.
+- Use English for repository narrative content by default unless a localized variant is explicitly required.
+- The script UI now targets multilingual support, with English and Japanese as the first supported languages.
+- New user-facing UI text should be written so that English and Japanese variants can be maintained consistently.
+- Do not add Chinese or other localized UI/documentation blocks unless explicitly requested.
+- Quoted strings and code examples may remain as-is when required by external compatibility.
 
 ## Encoding / Character Set Requirements
 - All repository text files must remain UTF-8 encoded.
@@ -41,7 +43,7 @@ These instructions apply to this repository.
 
 ## UI Text Style
 - UI text must be instructional and professional.
-- Keep wording concise, direct, and in English only.
+- Keep wording concise and direct in both English and Japanese.
 - Reuse existing labels and strings where practical instead of hardcoding many variants.
 - Keep dialog structure consistent across steps.
 
@@ -50,6 +52,39 @@ These instructions apply to this repository.
 - Avoid changing workflow order, output shape, or logging verbosity without a reason.
 - Refactors must preserve observable behavior unless the task explicitly requests behavior changes.
 - Keep the script runnable in Fiji without adding dependencies outside normal Fiji macro expectations.
+
+## Workflow Design
+- The current workflow definition in this section is authoritative and replaces earlier scaffold assumptions when conflicts exist.
+- The script should support an initial language selection step before any project-specific input is collected.
+
+### Interface 1: Introduction and language selection
+- Show script description text.
+- Show a language selection dropdown.
+- Support English and Japanese.
+- Provide an `OK` button that advances to the next step.
+
+### Interface 2: Working folder selection
+- Use the default file chooser dialog to select the working folder.
+- Validate whether the folder structure and naming match the script's expected pattern.
+- If validation fails, show a notice, wait for `OK`, and reopen the folder chooser.
+
+### Interface 3: Not currently defined
+- No separate third interface is currently specified.
+- Do not invent this step unless a later requirement defines it.
+
+### Interface 4: Learned-parameter text review
+- Read the learned parameter content from the working folder.
+- The learned parameters are primarily hierarchical background data used to remove background influence.
+- Display this content in a text-display-capable way so the user can read it directly.
+- Also show a separate prompt telling the user to click `OK` to continue.
+- Do not use a custom-control dialog for this confirmation step, because in Fiji it can steal focus from the text display window and prevent proper interaction.
+
+### Interface 5: Analysis execution
+- Start the analysis after the user confirms the learned-parameter review step.
+- Show progress through structured log output as the analysis runs.
+
+### Interface 6: Final results
+- Show the final results as a table.
 
 ## Output / Results
 - Keep output naming stable unless explicitly asked to change it.
